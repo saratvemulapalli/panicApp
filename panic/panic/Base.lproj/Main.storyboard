@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="panic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QpE-rX-Cvu">
+                                <rect key="frame" x="20" y="176" width="560" height="404"/>
+                            </mapView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UUS-II-wcI">
+                                <rect key="frame" x="280" y="133" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0w-sm-ZKN">
+                                <rect key="frame" x="157" y="98" width="286" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="286" id="5Fo-qP-RlB"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="You are being Monitored for Safety">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="1" green="0.45645703599999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QpE-rX-Cvu" secondAttribute="bottom" constant="20" id="4Av-w4-niG"/>
+                            <constraint firstItem="n0w-sm-ZKN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="34" id="Bkn-BB-xkV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UUS-II-wcI" secondAttribute="bottom" constant="436" id="SwO-sV-qkM"/>
+                            <constraint firstItem="QpE-rX-Cvu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="112" id="ZXS-Gj-4OX"/>
+                            <constraint firstItem="n0w-sm-ZKN" firstAttribute="centerX" secondItem="QpE-rX-Cvu" secondAttribute="centerX" id="c99-rz-7Nv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UUS-II-wcI" secondAttribute="trailing" constant="251" id="ecH-sj-RJs"/>
+                            <constraint firstItem="UUS-II-wcI" firstAttribute="top" secondItem="n0w-sm-ZKN" secondAttribute="bottom" constant="14" id="gJA-QS-OWI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QpE-rX-Cvu" secondAttribute="trailing" id="ib9-op-htr"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="QpE-rX-Cvu" secondAttribute="leading" id="rAX-7t-L4B"/>
+                            <constraint firstItem="UUS-II-wcI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="260" id="tgl-SB-1es"/>
+                            <constraint firstItem="UUS-II-wcI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="69" id="ujK-mW-Owx"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="399"/>
+        </scene>
+    </scenes>
+</document>

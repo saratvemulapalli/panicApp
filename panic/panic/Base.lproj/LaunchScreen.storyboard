@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHq-Zs-olT">
+                                <rect key="frame" x="157" y="83" width="286" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="You are being Monitored for Safety">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="1" green="0.45645703595126952" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gk9-Ld-Z1h">
+                                <rect key="frame" x="276" y="112" width="51" height="31"/>
+                            </switch>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ynV-oV-Jds">
+                                <rect key="frame" x="20" y="176" width="560" height="404"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gk9-Ld-Z1h" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="256" id="40D-ZX-1Dx"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ynV-oV-Jds" secondAttribute="leading" id="DMf-rZ-RF7"/>
+                            <constraint firstItem="cHq-Zs-olT" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="137" id="Is0-3y-zrQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gk9-Ld-Z1h" secondAttribute="trailing" constant="255" id="Jtu-vr-xuk"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="cHq-Zs-olT" secondAttribute="bottom" constant="496" id="KOQ-wc-uzl"/>
+                            <constraint firstItem="Gk9-Ld-Z1h" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="92" id="Lo1-hz-LPl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cHq-Zs-olT" secondAttribute="trailing" constant="137" id="OI6-cQ-Yon"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Gk9-Ld-Z1h" secondAttribute="bottom" constant="457" id="TpV-QZ-IcH"/>
+                            <constraint firstItem="ynV-oV-Jds" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="156" id="hst-8h-8Ek"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ynV-oV-Jds" secondAttribute="trailing" id="shV-w9-lX7"/>
+                            <constraint firstItem="cHq-Zs-olT" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="63" id="sqA-zt-jr4"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ynV-oV-Jds" secondAttribute="bottom" constant="20" id="vyA-y9-9Kl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+</document>
